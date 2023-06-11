@@ -21,15 +21,7 @@ function convertNepaliToEnglish() {
   let englishDay = nepaliDay - 17;
 
 
-  // Adjust the English date if it exceeds the maximum values
-  // if (englishMonth > 12) {
-  //   englishYear += Math.floor((englishMonth - 1) / 12);
-  //   englishMonth = (englishMonth - 1) % 12 + 1;
-  // }else{
-  //   englishYear -= Math.floor((englishMonth + 1) / 12);
-  //   englishMonth = (englishMonth + 1) % 12 - 1;
-  // }
-  
+
   if(englishMonth >= nepaliMonth){
     englishMonth = englishMonth - nepaliMonth;
   }else {
